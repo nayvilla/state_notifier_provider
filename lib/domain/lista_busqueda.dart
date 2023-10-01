@@ -1,11 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:todo_list_riverpod/presentation/pages/home_page/constants/constants.dart';
 
-part 'todo_model.freezed.dart';
+part 'lista_busqueda.freezed.dart';
 
 @freezed
-class TodoModel with _$TodoModel {
-  const factory TodoModel({
+class CharacterModel with _$CharacterModel {
+  factory CharacterModel({
     // ignore: non_constant_identifier_names
     required String id_estado_cuenta,
     required String fechaTansaccion,
@@ -16,12 +16,10 @@ class TodoModel with _$TodoModel {
     required String fechaVencimiento,
     required String observaciones,   
     required bool isTodoCompleted,
-    
-  }) = _TodoModel;
+  }) = _CharacterModel;
+  const CharacterModel._();
 
-  const TodoModel._();
-
-  factory TodoModel.empty() => TodoModel(
+  factory CharacterModel.empty() => CharacterModel(
         id_estado_cuenta: "",
         fechaTansaccion: Constants.fechaActual,
         debe: Constants.debe,
@@ -31,5 +29,18 @@ class TodoModel with _$TodoModel {
         fechaVencimiento: Constants.fechaActual,
         observaciones: Constants.observaciones,
         isTodoCompleted: false,
-      );
+    );
+}
+
+
+@freezed
+class BusquedaModel with _$BusquedaModel {
+  factory BusquedaModel({
+    required String busqueda,
+  }) = _BusquedaModel;
+  const BusquedaModel._();
+
+  factory BusquedaModel.empty() => BusquedaModel(
+        busqueda: "",
+    );
 }

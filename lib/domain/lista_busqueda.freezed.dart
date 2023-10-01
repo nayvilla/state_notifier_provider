@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'todo_model.dart';
+part of 'lista_busqueda.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$TodoModel {
+mixin _$CharacterModel {
 // ignore: non_constant_identifier_names
   String get id_estado_cuenta => throw _privateConstructorUsedError;
   String get fechaTansaccion => throw _privateConstructorUsedError;
@@ -28,14 +28,15 @@ mixin _$TodoModel {
   bool get isTodoCompleted => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $TodoModelCopyWith<TodoModel> get copyWith =>
+  $CharacterModelCopyWith<CharacterModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $TodoModelCopyWith<$Res> {
-  factory $TodoModelCopyWith(TodoModel value, $Res Function(TodoModel) then) =
-      _$TodoModelCopyWithImpl<$Res, TodoModel>;
+abstract class $CharacterModelCopyWith<$Res> {
+  factory $CharacterModelCopyWith(
+          CharacterModel value, $Res Function(CharacterModel) then) =
+      _$CharacterModelCopyWithImpl<$Res, CharacterModel>;
   @useResult
   $Res call(
       {String id_estado_cuenta,
@@ -50,9 +51,9 @@ abstract class $TodoModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TodoModelCopyWithImpl<$Res, $Val extends TodoModel>
-    implements $TodoModelCopyWith<$Res> {
-  _$TodoModelCopyWithImpl(this._value, this._then);
+class _$CharacterModelCopyWithImpl<$Res, $Val extends CharacterModel>
+    implements $CharacterModelCopyWith<$Res> {
+  _$CharacterModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -114,10 +115,11 @@ class _$TodoModelCopyWithImpl<$Res, $Val extends TodoModel>
 }
 
 /// @nodoc
-abstract class _$$_TodoModelCopyWith<$Res> implements $TodoModelCopyWith<$Res> {
-  factory _$$_TodoModelCopyWith(
-          _$_TodoModel value, $Res Function(_$_TodoModel) then) =
-      __$$_TodoModelCopyWithImpl<$Res>;
+abstract class _$$_CharacterModelCopyWith<$Res>
+    implements $CharacterModelCopyWith<$Res> {
+  factory _$$_CharacterModelCopyWith(
+          _$_CharacterModel value, $Res Function(_$_CharacterModel) then) =
+      __$$_CharacterModelCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -133,11 +135,11 @@ abstract class _$$_TodoModelCopyWith<$Res> implements $TodoModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_TodoModelCopyWithImpl<$Res>
-    extends _$TodoModelCopyWithImpl<$Res, _$_TodoModel>
-    implements _$$_TodoModelCopyWith<$Res> {
-  __$$_TodoModelCopyWithImpl(
-      _$_TodoModel _value, $Res Function(_$_TodoModel) _then)
+class __$$_CharacterModelCopyWithImpl<$Res>
+    extends _$CharacterModelCopyWithImpl<$Res, _$_CharacterModel>
+    implements _$$_CharacterModelCopyWith<$Res> {
+  __$$_CharacterModelCopyWithImpl(
+      _$_CharacterModel _value, $Res Function(_$_CharacterModel) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -153,7 +155,7 @@ class __$$_TodoModelCopyWithImpl<$Res>
     Object? observaciones = null,
     Object? isTodoCompleted = null,
   }) {
-    return _then(_$_TodoModel(
+    return _then(_$_CharacterModel(
       id_estado_cuenta: null == id_estado_cuenta
           ? _value.id_estado_cuenta
           : id_estado_cuenta // ignore: cast_nullable_to_non_nullable
@@ -196,8 +198,8 @@ class __$$_TodoModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_TodoModel extends _TodoModel {
-  const _$_TodoModel(
+class _$_CharacterModel extends _CharacterModel {
+  _$_CharacterModel(
       {required this.id_estado_cuenta,
       required this.fechaTansaccion,
       required this.debe,
@@ -231,14 +233,14 @@ class _$_TodoModel extends _TodoModel {
 
   @override
   String toString() {
-    return 'TodoModel(id_estado_cuenta: $id_estado_cuenta, fechaTansaccion: $fechaTansaccion, debe: $debe, haber: $haber, saldo: $saldo, estadoVenta: $estadoVenta, fechaVencimiento: $fechaVencimiento, observaciones: $observaciones, isTodoCompleted: $isTodoCompleted)';
+    return 'CharacterModel(id_estado_cuenta: $id_estado_cuenta, fechaTansaccion: $fechaTansaccion, debe: $debe, haber: $haber, saldo: $saldo, estadoVenta: $estadoVenta, fechaVencimiento: $fechaVencimiento, observaciones: $observaciones, isTodoCompleted: $isTodoCompleted)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TodoModel &&
+            other is _$_CharacterModel &&
             (identical(other.id_estado_cuenta, id_estado_cuenta) ||
                 other.id_estado_cuenta == id_estado_cuenta) &&
             (identical(other.fechaTansaccion, fechaTansaccion) ||
@@ -272,12 +274,12 @@ class _$_TodoModel extends _TodoModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_TodoModelCopyWith<_$_TodoModel> get copyWith =>
-      __$$_TodoModelCopyWithImpl<_$_TodoModel>(this, _$identity);
+  _$$_CharacterModelCopyWith<_$_CharacterModel> get copyWith =>
+      __$$_CharacterModelCopyWithImpl<_$_CharacterModel>(this, _$identity);
 }
 
-abstract class _TodoModel extends TodoModel {
-  const factory _TodoModel(
+abstract class _CharacterModel extends CharacterModel {
+  factory _CharacterModel(
       {required final String id_estado_cuenta,
       required final String fechaTansaccion,
       required final String debe,
@@ -286,8 +288,8 @@ abstract class _TodoModel extends TodoModel {
       required final String estadoVenta,
       required final String fechaVencimiento,
       required final String observaciones,
-      required final bool isTodoCompleted}) = _$_TodoModel;
-  const _TodoModel._() : super._();
+      required final bool isTodoCompleted}) = _$_CharacterModel;
+  _CharacterModel._() : super._();
 
   @override // ignore: non_constant_identifier_names
   String get id_estado_cuenta;
@@ -309,6 +311,125 @@ abstract class _TodoModel extends TodoModel {
   bool get isTodoCompleted;
   @override
   @JsonKey(ignore: true)
-  _$$_TodoModelCopyWith<_$_TodoModel> get copyWith =>
+  _$$_CharacterModelCopyWith<_$_CharacterModel> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$BusquedaModel {
+  String get busqueda => throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $BusquedaModelCopyWith<BusquedaModel> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $BusquedaModelCopyWith<$Res> {
+  factory $BusquedaModelCopyWith(
+          BusquedaModel value, $Res Function(BusquedaModel) then) =
+      _$BusquedaModelCopyWithImpl<$Res, BusquedaModel>;
+  @useResult
+  $Res call({String busqueda});
+}
+
+/// @nodoc
+class _$BusquedaModelCopyWithImpl<$Res, $Val extends BusquedaModel>
+    implements $BusquedaModelCopyWith<$Res> {
+  _$BusquedaModelCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? busqueda = null,
+  }) {
+    return _then(_value.copyWith(
+      busqueda: null == busqueda
+          ? _value.busqueda
+          : busqueda // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_BusquedaModelCopyWith<$Res>
+    implements $BusquedaModelCopyWith<$Res> {
+  factory _$$_BusquedaModelCopyWith(
+          _$_BusquedaModel value, $Res Function(_$_BusquedaModel) then) =
+      __$$_BusquedaModelCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String busqueda});
+}
+
+/// @nodoc
+class __$$_BusquedaModelCopyWithImpl<$Res>
+    extends _$BusquedaModelCopyWithImpl<$Res, _$_BusquedaModel>
+    implements _$$_BusquedaModelCopyWith<$Res> {
+  __$$_BusquedaModelCopyWithImpl(
+      _$_BusquedaModel _value, $Res Function(_$_BusquedaModel) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? busqueda = null,
+  }) {
+    return _then(_$_BusquedaModel(
+      busqueda: null == busqueda
+          ? _value.busqueda
+          : busqueda // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_BusquedaModel extends _BusquedaModel {
+  _$_BusquedaModel({required this.busqueda}) : super._();
+
+  @override
+  final String busqueda;
+
+  @override
+  String toString() {
+    return 'BusquedaModel(busqueda: $busqueda)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_BusquedaModel &&
+            (identical(other.busqueda, busqueda) ||
+                other.busqueda == busqueda));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, busqueda);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_BusquedaModelCopyWith<_$_BusquedaModel> get copyWith =>
+      __$$_BusquedaModelCopyWithImpl<_$_BusquedaModel>(this, _$identity);
+}
+
+abstract class _BusquedaModel extends BusquedaModel {
+  factory _BusquedaModel({required final String busqueda}) = _$_BusquedaModel;
+  _BusquedaModel._() : super._();
+
+  @override
+  String get busqueda;
+  @override
+  @JsonKey(ignore: true)
+  _$$_BusquedaModelCopyWith<_$_BusquedaModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:todo_list_riverpod/domain/todo_model.dart';
-import 'package:todo_list_riverpod/presentation/pages/home_page/constants/texts.dart';
-import 'package:todo_list_riverpod/presentation/pages/home_page/widgets/todos_action_part.dart';
 import 'package:todo_list_riverpod/presentation/pages/home_page/widgets/todos_part.dart';
 import 'package:todo_list_riverpod/providers/todo_provider.dart';
 
@@ -16,22 +14,11 @@ class HomePage extends ConsumerWidget {
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 100),
+        padding: const EdgeInsets.only(top: 0),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const Padding(
-                padding: EdgeInsets.all(25),
-                child: Text(
-                  titleText,
-                  style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w500,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              TodosActionPart(),
+              //TodosActionPart(),
               TodosPart(todoList: reversedTodoList),
             ],
           ),
